@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="container">
+    
+    <h1>📚 AI Study Planner</h1>
+
+    <button id="themeToggle" title="Toggle theme">🌙</button>
+    <h3 id="streak">🔥 Streak: 0 days</h3>
+    <p id="quote"></p>
+
+    <!-- ===== Input Section ===== -->
+    <div class="input-box">
+      <input
+        type="text"
+        id="subject"
+        placeholder="Enter subject (e.g., DBMS)"
+      />
+
+      <input
+        type="date"
+        id="examDate"
+      />
+
+      <button onclick="addSubject()">➕ Add Study Plan</button>
+    </div>
+
+    <!-- ===== Clear Button ===== -->
+    <button onclick="clearAll()">🗑 Clear All</button>
+
+    <h2>📅 Study Plan</h2>
+
+    <!-- ===== Plan List ===== -->
+    <ul id="planList"></ul>
+    <h2>📊 Progress</h2>
+    <canvas id="progressChart" height="200"></canvas>
+    <h2>🔥 Study Activity</h2>
+    <div id="heatmap"></div>
+
+  </div>
+
+  <!-- Chart.js CDN (must be before script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
