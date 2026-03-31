@@ -21,11 +21,7 @@ A smart study planning web app that helps students organize their exam preparati
 
 ## 🌐 Live Demo
 
-(Add your Netlify link here)
-
-## 📸 Preview
-
-(Add screenshot later)
+https://plan-then-sudy.netlify.app
 
 ---
 
